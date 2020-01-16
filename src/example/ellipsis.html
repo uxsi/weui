@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title></title>
+  <style>
+    .true{font-size:14px;line-height:1.4;margin-bottom:100px;position:absolute;color:red;display:none;}
+
+    .demo{width:100%;}
+    .demo2{width:100%;}
+    .mod_area,.true,.fake_mod{}
+    .mod_wrp{
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      line-height: 0;
+      font-size: 14px;
+      letter-spacing: 35px;
+      color: transparent;
+
+      position:relative;
+      overflow:hidden;
+    }
+    .mod{
+      line-height:1.4;
+      font-size:14px;
+      letter-spacing: 0;
+    }
+    .mod_inner{
+      display:inline;
+      font-size:14px;
+      line-height:0;
+      color:black;
+
+      position:relative;
+      z-index:1;
+    }
+
+
+    .mod{position:relative;}
+    .fake_mod{
+      font-size:14px;line-height:1.4;margin-bottom:100px;position:absolute;color:transparent;
+      letter-spacing: 0;
+      width:100%;margin-left:50%;
+      top:0;
+    }
+    .fake_mod > *{float:right;}
+    .fake_inner{width:100%;height:100%;margin-left:-50%;}
+    .fake_placeholder{width:50%;height:calc(3 * 1.4em);}
+    .fake_more{margin-top:-1.4em;color:black;position:relative;z-index:1;}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="demo">
+    <div class="true">Elit assumenda asperiores incidunt maiores tempore Aut ducimus sit cupiditate itaque ab! Placeat perferendis quaerat dignissimos modi porro itaque repellat ea Quas eius perferendis voluptas fugiat perspiciatis nobis fugiat. Quos</div>
+
+
+    <div class="mod_area">
+      <div class="mod_wrp">
+        <div class="mod">
+          <div class="mod_inner">Elit assumenda asperiores incidunt maiores tempore Aut ducimus sit cupiditate itaque ab! Placeat perferendis quaerat dignissimos modi porro itaque repellat ea Quas eius perferendis voluptas fugiat perspiciatis nobis fugiat. Quos</div>
+        </div>
+        <div class="fake_mod">
+          <div class="fake_inner">Elit assumenda asperiores incidunt maiores tempore Aut ducimus sit cupiditate itaque ab! Placeat perferendis quaerat dignissimos modi porro itaque repellat ea Quas eius perferendis voluptas fugiat perspiciatis nobis fugiat. Quos</div>
+          <div class="fake_placeholder"></div>
+          <div class="fake_more">...&nbsp;&nbsp;<a  href="baidu.com" target="_blank">更多</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+</html>

@@ -113,7 +113,7 @@ gulp.task('build:example:style', function() {
 
 gulp.task('build:example:html', function() {
   gulp
-    .src('src/example/index.html', option)
+    .src('src/example/*.html', option)
     .pipe(
       tap(function(file) {
         var dir = path.dirname(file.path);
